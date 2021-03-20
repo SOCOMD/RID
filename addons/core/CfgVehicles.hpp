@@ -8,7 +8,7 @@ class CfgVehicles
             class ACE_Equipment {
                 class ACE_DigForCable {
                     displayName = "Dig for cable";
-                    condition = QUOTE([_player] call ace_common_fnc_isEngineer && {[_player] call ace_common_fnc_canDig});
+                    condition = QUOTE([_player] call ace_trenches_fnc_canDigTrench);
                     exceptions[] = {};
                     statement = QUOTE(call FUNC(digForWire));
                     showDisabled = 0;
